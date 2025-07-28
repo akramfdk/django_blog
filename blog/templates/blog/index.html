@@ -20,23 +20,27 @@
             <img src="{% static 'blog/images/akram.jpg' %}" alt="Akram - The Author of this Blog">
             <h2>AKRAM'S BLOG</h2>
         </header>
-        <p>Hi, I am Akram and I love to blog about latest tech!!</p>
+        <p>Hi, I am Akram and I love to stay updated latest tech!!</p>
     </section>
 
     <section id="latest-posts">
-        <h2>My Latest Thoughts</h2>
+
+        <h2>My Latest Blogs</h2>
         <ul>
-            {% include "blog/includes/post.html" %}
+            {% for post in latest_posts %}
+                {% include "blog/includes/post.html" %}
+            {% endfor %}
         </ul>
+
     </section>
 
     <section id="about">
         <h2>What I Do</h2>
         <p>
-            I love programming and am committed to staying updated with the latest technological advancements.
+            I love programming and keenly follow the latest technological advancements.
         </p>
         <p>
-            My goal is to keep on growing as a developer and help others reach their goals!
+            My goal is to keep on growing as a developer and make meaningful contribution!
         </p>
     </section>
 {% endblock %}
