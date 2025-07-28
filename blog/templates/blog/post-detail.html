@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title_block %}
+This Post Title
+{% endblock %}
+
+{% block css_block %}
+  <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+{% endblock %}
+
+{% block body_block %}
+<section id="summary">
+  <h2>Post Title</h2>
+  <article>
+    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title" />
+    <address>By Akram</address>
+    <div>Last updated on <time>July 27th</time></div>
+  </article>
+</section>
+
+<main>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti libero
+    iste inventore nulla sit, neque reprehenderit aperiam voluptatem, animi, qui
+    deserunt sapiente autem quisquam? Repellat fugiat id odio optio at.
+  </p>
+
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti libero
+    iste inventore nulla sit, neque reprehenderit aperiam voluptatem, animi, qui
+    deserunt sapiente autem quisquam? Repellat fugiat id odio optio at.
+  </p>
+
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti libero
+    iste inventore nulla sit, neque reprehenderit aperiam voluptatem, animi, qui
+    deserunt sapiente autem quisquam? Repellat fugiat id odio optio at.
+  </p>
+
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti libero
+    iste inventore nulla sit, neque reprehenderit aperiam voluptatem, animi, qui
+    deserunt sapiente autem quisquam? Repellat fugiat id odio optio at.
+  </p>
+</main>
+{% endblock %}
